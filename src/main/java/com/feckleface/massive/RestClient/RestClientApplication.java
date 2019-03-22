@@ -27,8 +27,6 @@ public class RestClientApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestClientApplication.class, args);
-
-
 	}
 
 	@Override
@@ -42,6 +40,5 @@ public class RestClientApplication implements CommandLineRunner {
 		List<String> finalResult = newnewResult.stream().map(element -> (String) element.get("headline")).collect(Collectors.toList());
 
 		String x = "x";
-
 	}
 }
